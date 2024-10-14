@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Thota Rahul</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1>Thota Rahul</h1>
+            <ul>
+                <li><a href="#landing">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#job-simulations">Job Simulation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Landing Section (Gradient Background) -->
+    <section id="landing" class="landing-section">
+        <div class="container">
+            <h2>Aspiring AIML Engineer</h2>
+            <p>Trust Your Wings, Not Branch!</p>
+            <a href="#projects" class="btn">Explore My Work</a>
+            <!-- Scroll Down Text and Arrow -->
+            <div class="scroll-down" onclick="scrollToAbout()">
+                <p>Scroll Down</p>
+                <span class="arrow">↓</span>
+            </div>
+        </div>
+    </section>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-heading">About Me</h2>
+        <div class="about-content">
+            <img src="doc/IMG_5273.jpg" alt="About Me" class="about-image">
+            <div class="about-text">
+                <p>Aspiring ML and AI student with experience in building machine learning models and analyzing data. Proficient in Python and libraries like TensorFlow and Scikit-learn, with strong problem-solving and teamwork skills. Eager to apply my knowledge in real-world ML and AI projects. I am also keen on exploring new technologies that can enhance my learning experience and contribute to innovative solutions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-heading">Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Sentiment Analysis Chatbot using NLP</h3>
+                    
+                    <p>Goal: Developed a chatbot that analyzes sentiment from text using a Twitter dataset. .</p>
+                    <br>
+                    <p>
+                        <a href="https://github.com/rahulthota21/projects/tree/main/Chatbot%20With%20Sentimental%20Analysis" target="_blank" class="button">View on GitHub</a>
+                    </p>
+                    
+                </div>
+                <!-- More projects can be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2 class="section-heading">Skills</h2>
+        <div class="skills-category">
+            <div class="skills-column">
+                <h3>AI & Data Science</h3>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="92">
+                        <span class="skill-value">45%</span>
+                    </div>
+                    <p>Computer Vision</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="85">
+                        <span class="skill-value">75%</span>
+                    </div>
+                    <p>Natural Language Processing</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="85">
+                        <span class="skill-value">85%</span>
+                    </div>
+                    <p>Probability & Statistics</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="80">
+                        <span class="skill-value">60%</span>
+                    </div>
+                    <p>Data Analytics & Visualization</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="90">
+                        <span class="skill-value">75%</span>
+                    </div>
+                    <p>Frameworks & Libraries</p>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3>Programming</h3>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="95">
+                        <span class="skill-value">85%</span>
+                    </div>
+                    <p>Python</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="90">
+                        <span class="skill-value">80%</span>
+                    </div>
+                    <p>C & C++</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="90">
+                        <span class="skill-value">40%</span>
+                    </div>
+                    <p>Java</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="95">
+                        <span class="skill-value">75%</span>
+                    </div>
+                    <p>SQL</p>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3>Front End</h3>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="90">
+                        <span class="skill-value">87%</span>
+                    </div>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="85">
+                        <span class="skill-value">81%</span>
+                    </div>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="35">
+                        <span class="skill-value">35%</span>
+                    </div>
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-heading">Certifications</h2>
+            <div class="certification-grid">
+                <div class="certification-card">
+                    <h3>AWS Certification</h3>
+                    <p>Amrita Vishwa Vidyapeetham CIR, Aug 2024</p>
+                </div>
+                <div class="certification-card">
+                    <h3>Python Foundation Certificate</h3>
+                    <p>Infosys Springboard, Jul 2024</p>
+                </div>
+                <div class="certification-card">
+                    <h3>Machine Learning Specialization</h3>
+                    <p>Coursera (deeplearning.ai), Sep 2024</p>
+                </div>
+                <div class="certification-card">
+                    <h3>TensorFlow Keras Bootcamp</h3>
+                    <p>OpenCV University, Aug 2024</p>
+                </div>
+                <div class="certification-card">
+                    <h3>NumPy, Pandas, Matplotlib</h3>
+                    <p>Udemy, Aug 2024</p>
+                </div>
+                <div class="certification-card">
+                    <h3>Machine Learning with Python</h3>
+                    <p>IBM (Coursera), Sep 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-heading">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>B.Tech - Computer Science</h3>
+                    <p>Amrita Vishwa Vidyapeetham, Amritapuri Campus</p>
+                    <p>Oct 2022 - April 2026</p>
+                </div>
+                <div class="education-card">
+                    <h3>Intermediate</h3>
+                    <p>Vijaya Junior College, Challapalli, AP</p>
+                    <p>June 2020 - March 2022</p>
+                </div>
+                <div class="education-card">
+                    <h3>Schooling</h3>
+                    <p>Vijaya Convent High School, Challapalli, AP</p>
+                    <p>June 2008 - April 2020</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Simulations Section -->
+<section id="job-simulations" class="section">
+    <div class="container">
+        <h2 class="section-heading">Job Simulations</h2>
+        <div class="job-simulation-grid">
+            <div class="job-card" onclick="openModal('jpmorgan')">
+                <h3>JPMorgan Chase & Co. Excel Skills Job Simulation</h3>
+            </div>
+            <div class="job-card" onclick="openModal('bcg')">
+                <h3>BCG Data Science Job Simulation</h3>
+            </div>
+            <div class="job-card" onclick="openModal('accenture')">
+                <h3>Accenture North America Data Analytics Job Simulation</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for Job Simulation Details -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <div id="modal-details"></div>
+    </div>
+</div>
+
+    <!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-heading">Contact Me</h2>
+        <form action="https://formspree.io/f/xwpkkbel" method="POST"> <!-- Update with your Formspree URL -->
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/rahulthota21" target="_blank" class="social-icon linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/rahulthota21" target="_blank" class="social-icon github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.kaggle.com/rahulthota21" target="_blank" class="social-icon kaggle">
+                <i class="fa-brands fa-kaggle"></i>
+            </a>
+            <a href="https://x.com/RahulThotaX?s=08" target="_blank" class="social-icon twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Include Font Awesome in the <head> section -->
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Thota Rahul. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
