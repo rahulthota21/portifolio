@@ -587,3 +587,123 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+/* Media queries for mobile and tablet responsiveness */
+
+/* For screens below 768px (mobile devices) */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        float: none;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .skills-category, .certification-grid, .job-simulation-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-heading {
+        font-size: 32px;
+    }
+
+    .landing-section h2 {
+        font-size: 48px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* For screens between 769px and 1024px (tablets) */
+@media (max-width: 1024px) {
+    .skills-category, .certification-grid, .job-simulation-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .about-content {
+        gap: 20px;
+    }
+}
+
+/* Font and element adjustments for smaller screens */
+.landing-section h2 {
+    font-size: 32px;
+}
+
+.about-text {
+    font-size: 16px;
+}
+
+/* Button and card responsiveness */
+.btn, .button {
+    width: 100%;
+    padding: 10px;
+}
+
+.project, .certification-card, .education-card, .job-card {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Flexbox and grid tweaks */
+.skills-category, .certification-grid, .job-simulation-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* For screens below 768px (mobile devices) */
+@media (max-width: 768px) {
+    .navbar {
+        height: 50px; /* Decrease navbar height */
+        padding: 10px;
+    }
+
+    .navbar h1 {
+        font-size: 18px; /* Decrease logo font size */
+    }
+
+    .navbar ul {
+        display: none; /* Hide the full nav links */
+    }
+
+    /* Add a mobile hamburger menu */
+    .navbar .menu-icon {
+        display: block; /* Show the hamburger icon */
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        float: right;
+    }
+
+    .navbar.active ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
